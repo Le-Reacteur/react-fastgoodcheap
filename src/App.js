@@ -24,7 +24,9 @@ function App() {
         className={switch1 === true ? "enabled" : "disabled"}
         onClick={() => {
           setSwitch1(!switch1); // le ! permet d'inverser la valeur
-          disableSwitch(1);
+          if (switch1 === false) {
+            disableSwitch(1);
+          }
         }}
       >
         {switch1 === true ? "YES" : "NO"}
@@ -33,7 +35,9 @@ function App() {
         className={switch2 === true ? "enabled" : "disabled"}
         onClick={() => {
           setSwitch2(!switch2); // le ! permet d'inverser la valeur
-          disableSwitch(2);
+          if (switch2 === false) {
+            disableSwitch(2);
+          }
         }}
       >
         {switch2 === true ? "YES" : "NO"}
@@ -42,7 +46,9 @@ function App() {
         className={switch3 === true ? "enabled" : "disabled"}
         onClick={() => {
           setSwitch3(!switch3); // le ! permet d'inverser la valeur
-          disableSwitch(3);
+          if (switch3 === false) {
+            disableSwitch(3);
+          }
         }}
       >
         {switch3 === true ? "YES" : "NO"}
