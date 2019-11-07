@@ -12,7 +12,7 @@ function App() {
     if (switchNumber === 1 && switch2 === true && switch3 === true) {
       setSwitch2(false);
     } else if (switchNumber === 2 && switch1 === true && switch3 === true) {
-      setSwitch2(false);
+      setSwitch3(false);
     } else if (switchNumber === 3 && switch2 === true && switch1 === true) {
       setSwitch1(false);
     }
